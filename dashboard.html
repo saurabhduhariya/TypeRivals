@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - TypeRivals</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <div id="dashboard">
+        <div id="header">
+            <header class="sidebar">
+                <a href="#"class="logo">TypeRivals</a>
+                <nav class="navbar">
+                    <button class="textbutton" mode="time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M176 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l16 0 0 34.4C92.3 113.8 16 200 16 304c0 114.9 93.1 208 208 208s208-93.1 208-208c0-41.8-12.3-80.7-33.5-113.2l24.1-24.1c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L355.7 143c-28.1-23-62.2-38.8-99.7-44.6L256 64l16 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L224 0 176 0zm72 192l0 128c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-128c0-13.3 10.7-24 24-24s24 10.7 24 24z"/></svg>time</button>
+                    <button class="textbutton" mode="words"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M221.5 51.7C216.6 39.8 204.9 32 192 32s-24.6 7.8-29.5 19.7l-120 288-40 96c-6.8 16.3 .9 35 17.2 41.8s35-.9 41.8-17.2L93.3 384l197.3 0 31.8 76.3c6.8 16.3 25.5 24 41.8 17.2s24-25.5 17.2-41.8l-40-96-120-288zM264 320l-144 0 72-172.8L264 320z"/></svg>words</button>
+                    <button class="textbutton" mode="custom"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M78.6 5C69.1-2.4 55.6-1.5 47 7L7 47c-8.5 8.5-9.4 22-2.1 31.6l80 104c4.5 5.9 11.6 9.4 19 9.4l54.1 0 109 109c-14.7 29-10 65.4 14.3 89.6l112 112c12.5 12.5 32.8 12.5 45.3 0l64-64c12.5-12.5 12.5-32.8 0-45.3l-112-112c-24.2-24.2-60.6-29-89.6-14.3l-109-109 0-54.1c0-7.5-3.5-14.5-9.4-19L78.6 5zM23.2 376.8C8.3 391.7 0 411.8 0 432.8C0 476.5 35.5 512 79.2 512c21 0 41.1-8.3 56-23.2L238.5 385.5c-8.9-17.6-12.8-37.1-11.6-56.3L101.3 454.9c-5.9 5.8-13.8 9.1-22.1 9.1C62 464 48 450 48 432.8c0-8.3 3.3-16.2 9.1-22.1L194.3 273.5l-33.9-33.9L23.2 376.8zM463.9 164c-1.4 38.9-22.6 72.8-53.8 91.8c1.1 1 2.1 2 3.1 3l31.6 31.6c40.7-29 67.2-76.6 67.2-130.3c0-24.8-5.7-48.3-15.7-69.3c-4.4-9.2-16.5-10.5-23.7-3.3l-67.9 67.9c-3 3-7.1 4.7-11.3 4.7L368 160c-8.8 0-16-7.2-16-16l0-25.4c0-4.2 1.7-8.3 4.7-11.3l67.9-67.9c7.2-7.2 5.9-19.3-3.3-23.7C400.3 5.7 376.8 0 352 0C294.7 0 244.4 30.1 216.2 75.4C221.2 84 224 93.8 224 104l0 40.8 16 16 0-.8c0-60.5 48-109.9 108-111.9L322.7 73.4s0 0 0 0c-12 12-18.7 28.3-18.7 45.3l0 25.4c0 35.3 28.7 64 64 64l25.4 0c17 0 33.3-6.7 45.3-18.7L463.9 164z"/></svg>custom</button>
+                    <button class="textbutton" mode="contest"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#FFD43B" d="M400 0L176 0c-26.5 0-48.1 21.8-47.1 48.2c.2 5.3 .4 10.6 .7 15.8L24 64C10.7 64 0 74.7 0 88c0 92.6 33.5 157 78.5 200.7c44.3 43.1 98.3 64.8 138.1 75.8c23.4 6.5 39.4 26 39.4 45.6c0 20.9-17 37.9-37.9 37.9L192 448c-17.7 0-32 14.3-32 32s14.3 32 32 32l192 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-26.1 0C337 448 320 431 320 410.1c0-19.6 15.9-39.2 39.4-45.6c39.9-11 93.9-32.7 138.2-75.8C542.5 245 576 180.6 576 88c0-13.3-10.7-24-24-24L446.4 64c.3-5.2 .5-10.4 .7-15.8C448.1 21.8 426.5 0 400 0zM48.9 112l84.4 0c9.1 90.1 29.2 150.3 51.9 190.6c-24.9-11-50.8-26.5-73.2-48.3c-32-31.1-58-76-63-142.3zM464.1 254.3c-22.4 21.8-48.3 37.3-73.2 48.3c22.7-40.3 42.8-100.5 51.9-190.6l84.4 0c-5.1 66.3-31.1 111.2-63 142.3z"/></svg>contest</button>
+                    <button class="textbutton" mode="leaderboard"><i class='bx bxs-book-content' style='color:#ffff00'  ></i>leaderboard</button>
+                </nav>
+            </header>
+        </div>
+        <div id="upper">
+            <div id="top">
+                <h1 class="top3">Let's Start !</h1>
+            </div>
+            <div id="timer"></div>
+            <div id="type" tabindex="0">
+                <div id="words"></div>
+                <div id="cursor"></div>
+            </div>
+        </div>
+    </div>
+    <script type="module">
+        import { GoogleGenerativeAI } from "https://esm.sh/@google/generative-ai";
+      
+        const genAI = new GoogleGenerativeAI("AIzaSyB4gOit75DSdRKHXKq7vfHY7MsS17fgj5Y");
+      
+        async function run() {
+          const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+          const prompt = "Generate sentences without using comma Capital letters and without any punctuation mark.";
+          const result = await model.generateContent(prompt);
+          console.log(result.response.text());
+          return result.response.text();
+        }
+      
+        const sentences = await run();
+        const words = `${sentences}`.split(' ');
+        const wordsCount = words.length;
+
+const gametime = 30 * 1000;
+window.timer = null;
+window.gameStart = null;
+window.pauseTime = 0;
+
+function addClass(el,name) {
+  el.className += ' '+name;
+}
+function removeClass(el,name) {
+  el.className = el.className.replace(name,'');
+}
+
+function randomWord() {
+  const randomIndex = Math.floor(Math.random() * wordsCount);
+  return words[randomIndex];
+}
+
+function formatWord(word) {
+   return `<div class="word"><span class="letter">${word.split('').join('</span><span class="letter">')}</span></div>`;
+  }
+
+async function newGame() {
+  document.getElementById('words').innerHTML = '';
+  for(let i = 0; i < 200; i++) {
+    document.getElementById('words').innerHTML += formatWord(randomWord());
+  }
+  addClass(document.querySelector('.word'), 'current');
+  addClass(document.querySelector('.letter'), 'current');
+  document.getElementById('timer').innerHTML = (gametime / 1000) + '';
+  window.timer = null;
+}
+
+function getWpm() {
+  const words = [...document.querySelectorAll('.word')];
+  const lastTypedWord = document.querySelector('.word.current');
+  const lastTypedWordIndex = words.indexOf(lastTypedWord) + 1;
+  const typedWords = words.slice(0, lastTypedWordIndex);
+  const correctWords = typedWords.filter(word => {
+  const letters = [...word.children];
+  const incorrectLetters = letters.filter(letter => letter.className.includes('incorrect'));
+  const correctLetters = letters.filter(letter => letter.className.includes('correct'));
+  return incorrectLetters.length === 0 && correctLetters.length === letters.length;
+  });
+  return correctWords.length / gametime * 60000;
+}
+
+function gameOver() {
+   clearInterval(window.timer);
+    addClass(document.getElementById('type'), 'over');
+    document.getElementById('timer').innerHTML = `WPM: ${getWpm()}`;
+}
+
+document.getElementById('type').addEventListener('keyup', ev=> {
+  const key = ev.key;
+  const currentWord = document.querySelector('.word.current');
+  const currentLetter = document.querySelector('.letter.current');
+  const expected = currentLetter?.innerHTML || ' ';
+  const isLetter = key.length === 1 && key != ' ';
+  const isSpace = key === ' ';
+  const isBackspace = key === 'Backspace';
+  const isFirstLetter = currentWord.firstChild === currentLetter;
+  const isEnter = key === 'Enter';
+
+  if (isEnter) {
+    clearInterval(window.timer); 
+    window.timer = null; 
+    window.gameStart = null; 
+    removeClass(document.getElementById('type'), 'over'); 
+    newGame();
+    const cursor = document.getElementById('cursor');
+    const nextWord = document.querySelector('.word.current');
+    cursor.style.top = nextWord.getBoundingClientRect().top + 2 + 'px';
+    cursor.style.left = nextWord.getBoundingClientRect().left + 'px';
+    return; 
+  }
+
+ if (document.querySelector('#type.over')) {
+     return;
+ }
+
+  console.log({key,expected});
+
+  if (!window.timer && isLetter) {
+    window.timer = setInterval(() => {
+      if(window.gameStart === null) {
+        window.gameStart = (new Date()).getTime();
+      }
+      const currentTime = (new Date()).getTime();
+      const msPassed = currentTime - window.gameStart;
+      const sPassed = Math.round(msPassed / 1000);
+      const sLeft = (gametime / 1000) - sPassed;
+      if (sLeft <= 0) {
+        gameOver();
+        return;
+      }
+      document.getElementById('timer').innerHTML = sLeft;
+    }, 1000);
+    
+  }
+
+
+  if (isLetter) {
+    if(currentLetter){
+      addClass(currentLetter, key === expected ? 'correct' : 'incorrect')
+      removeClass(currentLetter, 'current');
+      if (currentLetter.nextSibling){
+        addClass(currentLetter.nextSibling, 'current')
+      }
+    }
+    else{
+      const incorrectLetter = document.createElement('span');
+      incorrectLetter.innerHTML = key;
+      incorrectLetter.className = 'letter incorrect extra';
+      currentWord.appendChild(incorrectLetter);
+    }
+  }
+  if (isSpace){
+    if(expected !== ' '){
+    const lettersToinvalidate = [...document.querySelectorAll('.word.current .letter:not(.correct)')];
+    lettersToinvalidate.forEach(letter => {
+      addClass(letter, 'incorrect');
+    });
+  }
+  removeClass(currentWord, 'current');
+  addClass(currentWord.nextSibling, 'current');
+  if (currentLetter) {
+    removeClass(currentLetter, 'current');
+  }
+  addClass(currentWord.nextSibling.firstChild, 'current');
+}
+
+//backspace
+if (isBackspace){
+  if(currentLetter && isFirstLetter){
+    removeClass(currentWord, 'current');
+    addClass(currentWord.previousSibling, 'current');
+   removeClass(currentLetter, 'current');
+   addClass(currentWord.previousSibling.lastChild, 'current');
+   removeClass(currentWord.previousSibling.lastChild, 'correct');
+    removeClass(currentWord.previousSibling.lastChild, 'incorrect');
+}
+if (currentLetter && !isFirstLetter){
+  removeClass(currentLetter, 'current');
+  addClass(currentLetter.previousSibling, 'current');
+  removeClass(currentLetter.previousSibling, 'correct');
+  removeClass(currentLetter.previousSibling, 'incorrect');
+}
+if(!currentLetter){
+  addClass(currentWord.lastChild, 'current');
+  removeClass(currentWord.lastChild, 'correct');
+  removeClass(currentWord.lastChild, 'incorrect');
+}
+}
+
+
+//move lines /words
+if (currentWord.getBoundingClientRect().top > 325) {
+  const words = document.getElementById('words');
+  const margin = parseInt(words.style.marginTop || '0px');
+  words.style.marginTop = (margin-45) + 'px';
+}
+
+
+//cursor
+const nextLetter = document.querySelector('.letter.current');
+const nextWord = document.querySelector('.word.current');
+const cursor = document.getElementById('cursor');
+if (nextLetter) {
+  cursor.style.top = nextLetter.getBoundingClientRect().top + 2 + 'px';
+  cursor.style.left = nextLetter.getBoundingClientRect().left + 'px';
+}
+else{
+  cursor.style.top = nextWord.getBoundingClientRect().top + 2 + 'px';
+  cursor.style.left = nextWord.getBoundingClientRect().right + 'px';
+}
+});
+
+
+newGame();
+
+      </script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
