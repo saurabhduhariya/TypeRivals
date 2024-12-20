@@ -63,33 +63,3 @@ document.addEventListener("DOMContentLoaded", () => {
   handleLogin();
   handleSignup();
 });
-
-
-const words = 'The quick brown fox jumps over the lazy dog The shimmering glow of the distant aurora danced across the endless horizon painting the night sky with hues of emerald and violet A gentle breeze whispered through the towering pines carrying with it the scent of fresh rain and earth Beneath the canopy of stars an old wooden cabin stood in serene solitude its weathered walls telling stories of seasons long past Inside the crackling fireplace cast flickering shadows illuminating shelves filled with books that seemed to hum with secrets waiting to be uncovered Amid the calm a subtle vibration disturbed the stillness a signal from a world beyond this tranquil haven pulling the dreamer back into a reality as enigmatic as the night itself'.split(' ');
-const wordsCount = words.length;
-
-function randomWord() {
-  const randomIndex = Math.ceil(Math.random() * wordsCount);
-  return words[randomIndex];
-}
-
-function formatWord(word) {
- return `<div class="word">${word}</div>`;
-}
-
-function newGame() {
-  document.getElementById('words').innerHTML = '';
-  for(let i = 0; i < 200; i++) {
-    document.getElementById('words').innerHTML += formatWord(randomWord());
-  }
-}
-
-newGame();
-
-
-let a = document.querySelector(".top3");
-a.addEventListener("mousemove",function(){
-    console.log("Button clicked");
-    a.style.backgroundColor = "red";
-    a.style.color = "white";
-});
